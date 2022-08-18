@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login_box">
+        <form method="POST" action="" >
+            {% csrf_token %}
+            <div>
+                <label for="ID">방문객 ID :</label>
+                <input type="text" name="username" id="ID">
+            </div>
+            <div>
+                <label for="pwd">비밀번호 :&nbsp;</label>
+                <input type="password" name="password" id="pwd">
+            </div>
+            <button type="submit">로그인!</button>
+        </form>
+    </div>    
+</body>
+</html>
